@@ -1,6 +1,6 @@
 ---
-title: "Online education for data science: Opportunities and challenges"
-subtitle: "AMIA 2022 LIEAF01: Panel"
+title: "Data Science Education in the Biomedical Sciences"
+subtitle: "Online education for data science: Opportunities and challenges: AMIA 2022 LIEAF01: Panel"
 
 author: "[Daniel Chen](https://daniel.rbind.io/)"
 date: "Monday, November 7, 2022"
@@ -13,15 +13,25 @@ format:
     hash-type: number
 ---
 
-## Washington DC {.center}
 
-## Musqueam {.center}
+## Washington DC {.center}
 
 <style>
 div.footnote {
   font-size: 10px;
 }
 </style>
+
+<img src="img/intro/nacotchtank.png" alt="map of native lands Washington DC of the Nacotchtank people." />
+
+::: footnote
+
+- https://native-land.ca/
+
+:::
+
+```{comment}
+## Musqueam {.center}
 
 <img src="img/intro/musqueam.png" alt="map of native lands in Vancouver, BC, Canada area" />
 
@@ -30,6 +40,8 @@ div.footnote {
 - https://native-land.ca/
 
 :::
+
+```
 
 ## Tutelo {.center}
 
@@ -60,15 +72,13 @@ div.footnote {
 ::: {.column width="60%"}
 - Postdoctoral Research and Teaching Fellow, UBC, MDS-Vancouver
 
-- Data Science Educator, RStudio, PBC ([RStudio Academy](https://www.rstudio.com/academy/))
+- Data Science Educator, Posit, PBC ([Posit Academy](https://posit.co/products/enterprise/academy/))
 
 - The Carpentries
 
 - Author, [Pandas for Everyone](https://www.pearson.com/us/higher-education/program/Chen-Pandas-for-Everyone-Python-Data-Analysis/PGM335102.html)
 :::
 ::::::
-
-
 
 # Data Science in the Biomedical Science
 
@@ -121,22 +131,6 @@ knitr::include_graphics("./img/020-ds-biomed/ostblom-2021-reproducibility_failur
 - Ziemann, Mark, Yotam Eren, and Assam El-Osta (2016). “Gene name errors are widespread in the scientific literature”. In: Genome biology 17.1, pp. 1–3
 :::
 
-
-## Successful R-based Test Package Submitted to FDA
-
-- Nov 22nd, 2021
-- R Consortium R submission Pilot 1 Project
--R-language based submission package
-    - meet the needs and the expectations of the FDA reviewers
-    - assessing code review
-    - analyses reproducibility.
-
-::: footnote
-- R Consortium. Successful R-based Test Package Submitted to FDA. R Consortium. Published December 8, 2021. Accessed December 8, 2021. https://www.r-consortium.org/blog/2021/12/08/successful-r-based-test-package-submitted-to-fda. RConsortium.
-- RConsortium/Submissions-Pilot1-to-Fda. R Consortium; 2021. Accessed December 8, 2021. https://github.com/RConsortium/submissions-pilot1-to-fda
-:::
-
-
 ## Backward Design Learning Materials
 
 1. Identify your learners (learner persona)
@@ -160,16 +154,6 @@ Implications and Lessons Learned for Domain-Specific Data Science Curriculum
 - Detailed description of an imaginary person
 - Embodies assumptions of the user and product
 - Cannot and should not represent every possible user
-
-::: footnote
-- Pruitt J, Adlin T. The Persona Lifecycle: Keeping People in Mind Throughout Product Design. 1st edition. Morgan Kaufmann; 2006.
-:::
-
-## Why use personas in education?
-
-- Minimize **discrepancies** on how people understand and communicate about users
-- Make implicit assumptions **explicit**
-- Stay focused on the **users** (user centric design)
 
 ::: footnote
 - Pruitt J, Adlin T. The Persona Lifecycle: Keeping People in Mind Throughout Product Design. 1st edition. Morgan Kaufmann; 2006.
@@ -226,18 +210,6 @@ knitr::include_graphics("./img/030-personas/summary_likert_all.png")
 knitr::include_graphics("./img/030-personas/q3.4-group.png")
 ```
 
-## Identifying Personas: Programming for Analysis
-
-```{r}
-knitr::include_graphics("./img/030-personas/q7.2_7-group.png")
-```
-
-## Identifying Personas: Solving technical problems
-
-```{r}
-knitr::include_graphics("./img/030-personas/q4.2-group.png")
-```
-
 ## Identifying Personas: Statistics
 
 ```{r}
@@ -281,13 +253,6 @@ knitr::include_graphics("./img/030-personas/persona-clare_clinician.png")
 - RStudio. Learner Personas. Published 2019. https://rstudio-education.github.io/learner-personas/
 :::
 
-## Biomedical Learner Persona Survey Conclusions
-
-1. First step in backward lesson decision: identify learners (learner personas)
-2. Have a way to create learner personas for the biomedical data science
-3. Survey tool validation allows others to create their own learner personas or help add to the current set of personas created in this study
-4. Identification of biomedical data science learner personas informs curriculum design
-
 # Assessing the Efficacy of Domain-Specific Data Science Curriculum in the Biomedical Sciences
 
 How Learner Personas Can Guide Educational Needs in the Short-Term and Long-Term
@@ -306,40 +271,6 @@ How Learner Personas Can Guide Educational Needs in the Short-Term and Long-Term
 :::
 
 # Creating the Learning Materials
-
-## Who Are Our Learners? {.smaller}
-
-- What do we know about their prior knowledge?
-
-:::::: columns
-::: {.column width="50%"}
-
-```{r, out.width="100%"}
-knitr::include_graphics("./img/040-learning_materials/concept_maps.png")
-```
-
-- Concept maps
-- Task Deconstruction
-
-:::
-
-::: {.column width="50%"}
-```{r, out.width="100%"}
-knitr::include_graphics("./img/040-learning_materials/dreyfus_model.png")
-```
-
-- Dreyfus model of skill acquisition
-
-:::
-::::::
-
-::: footnote
-- Ambrose SA, Bridges MW, DiPietro M, Lovett MC, Norman MK. How Learning Works: Seven Research-Based Principles for Smart Teaching. John Wiley & Sons; 2010.
-- Benner P. Using the Dreyfus Model of Skill Acquisition to Describe and Interpret Skill Acquisition and Clinical Judgment in Nursing Practice and Education. Bulletin of Science, Technology & Society. 2004;24(3):188-199. doi:10.1177/0270467604265061
-- Dreyfus SE, Dreyfus HL. A Five-Stage Model of the Mental Activities Involved in Directed Skill Acquisition. California Univ Berkeley Operations Research Center; 1980.
-- Koch C, Wilson G. Software carpentry: Instructor Training. Published online June 2016. doi:10.5281/zenodo.57571
-- Wilson G. Teaching Tech Together: How to Make Your Lessons Work and Build a Teaching Community around Them. Taylor & Francis; 2019. http://teachtogether.tech
-:::
 
 ## Managing Prior Knowledge
 
@@ -406,33 +337,6 @@ knitr::include_graphics("./img/040-learning_materials/summative-r.png")
 - Jordan KL, Marwick B, Weaver B, et al. Analysis of the Carpentries’ Long-Term Feedback Survey. Zenodo; 2017. doi:10.5281/zenodo.1039944
 - Jordan KL, Michonneau F. Analysis of The Carpentries Long-Term Surveys (April 2020). Zenodo; 2020. doi:10.5281/zenodo.3728205
 - Jordan K, Michonneau F, Weaver B. Analysis of Software and Data Carpentry’s Pre- and Post-Workshop Surveys. Zenodo; 2018. doi:10.5281/zenodo.1325464
-:::
-
-## Bloom’s Taxonomy
-
-:::::: columns
-::: {.column width="50%"}
-
-```{r, out.width="100%"}
-knitr::include_graphics("./img/040-learning_materials/blooms-pyramid.png")
-```
-:::
-
-::: {.column width="50%"}
-```{r, out.width="100%"}
-knitr::include_graphics("./img/040-learning_materials/blooms-willingham.png")
-```
-:::
-::::::
-
-- 2020 Computing Curriculum Guidelines: Knowledge-based -> Competency-based
-
-::: footnote
-- Anderson LW, Bloom BS, others. A Taxonomy for Learning, Teaching, and Assessing: A Revision of Bloom’s Taxonomy of Educational Objectives. Longman,; 2001.
-- Armstrong P. Bloom’s taxonomy. Vanderbilt University Center for Teaching. Published 2010. https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/
-- Bloom’s Taxonomy—That Pyramid is a Problem. Teach Like a Champion. Published April 3, 2017. Accessed November 29, 2021. https://teachlikeachampion.com/blog/blooms-taxonomy-pyramid-problem/
-- CC2020 Task Force. Computing Curricula 2020: Paradigms for Global Computing Education. ACM; 2020. doi:10.1145/3467967
-- Donald Clark Plan B: Bogus pyramids: Learning methods, Maslow and Bloom. Donald Clark Plan B. Published July 13, 2020. Accessed November 17, 2021. https://donaldclarkplanb.blogspot.com/2020/07/bogus-pyramids-learning-methods-maslow.html
 :::
 
 ## Learning Objectives {.smaller}
@@ -534,14 +438,18 @@ knitr::include_graphics("./img/040-learning_materials/workshop-survey-counts.png
 :::
 ::::::
 
-
-## Post-Long Summative
+## Learning Objectives {.smaller}
 
 :::::: columns
 ::: {.column width="50%"}
-```{r, out.width="100%"}
-knitr::include_graphics("./img/040-learning_materials/post_long-summative.png")
-```
+
+- Name the features of a tidy/clean dataset
+- Transform data for analysis
+- Identify when spreadsheets are useful
+- Assess when a task should not be done in a spreadsheet software
+- Break down data processing into smaller individual (and more manageable) steps
+- Construct a plot and table for exploratory data analysis
+- Calculate, interpret, and communicate an appropriate statistical analysis of the data
 :::
 
 ::: {.column width="50%"}
@@ -551,52 +459,23 @@ knitr::include_graphics("./img/040-learning_materials/summative-r.png")
 :::
 ::::::
 
-
-
 ## Pre-Post-Long Composite
 
 ```{r, out.width="100%"}
 knitr::include_graphics("./img/040-learning_materials/pre_post_long-composite.png")
 ```
 
-## Learning Material Effectiveness Conclusions
+## The Forgetting Curve
 
-1. Learner Personas and Concept Maps Help Curate Lesson Content
-2. Language-Agnostic Lessons Guide Presentation Order
-3. Data Science Lessons Differ from Computer Science Lessons
-4. Intermediate Materials will be difficult to plan
-5. Long-Term Practice is important
-6. Work on Relevant Problems Solidify skills
-7. Communities of Practice Provide Ongoing Learning and Scalability
+```{r, out.width="100%"}
+knitr::include_graphics("./img/040-learning_materials/forgetting_curve.png")
+```
 
+## "Neurons that fire together wire together"
 
-# Practical Implications
-
-## How Can I Use This Information?
-
-- Can explore your own (patient) data
-- Can work on curating your own data
-
-- Potentially faster research-question cycle
-
-- Continuing education
-
-## Design Your Own Materials
-
-Create your own learner personas:
-
-1. Identify who your learners are
-2. Figure out what they need and want to know
-3. Plan a guided learning tract
-
-- Use the surveys I’ve made with the data I’ve published
-
-## Teaching Knowledge
-
-- Content Knowledge: What the instructor knows
-- Curricular Knowledge: Curriculum materials to teach the content
-
-- Pedagogical Content Knowledge: How to teach the content
+```{r, out.width="100%"}
+knitr::include_graphics("./img/040-learning_materials/neurons.png")
+```
 
 ## Overall Conclusions {.smaller}
 
@@ -675,152 +554,3 @@ knitr::include_graphics("./img/040-learning_materials/pre_post_long-lo_only-comp
 <script src="https://kit.fontawesome.com/1f72d6921a.js" crossorigin="anonymous"></script>
 ```
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"> <!-- final font awesome -->
-
-
-
-# Backup {.center}
-
-# Data Science Education
-
-## Current Status of Data Science Education
-
-```{r}
-knitr::include_graphics("./img/010-ds_edu/song-2016-bachelors_masters.png")
-```
-
-::: footnote
-- Song IY, Zhu Y. Big data and data science: what should we teach? Expert Systems. 2016;33(4):364-373. doi:https://doi.org/10.1111/exsy.12130
-:::
-
-## Most People Are Missing "Data" Classes
-
-```{r}
-knitr::include_graphics("./img/010-ds_edu/kross-2020-dedicated_courses.png")
-```
-
-::: footnote
-- Kross S, Peng RD, Caffo BS, Gooding I, Leek JT. The Democratization of Data Science Education. The American Statistician. 2020;74(1):1-7. doi:10.1080/00031305.2019.1668849
-:::
-
-## The Data Science Cycle
-
-```{r}
-knitr::include_graphics("./img/010-ds_edu/data_science_cycles.png")
-```
-
-
-::: footnote
-- Bargagliotti A, Franklin C, Arnold P, et al. Pre-K-12 Guidelines for Assessment and Instruction in Statistics Education II (GAISE II): A Framework for Statistics and Data Science Education. American Statistical Association 2020.
-- Chen D. Data science figure. Published online December 2020. https://github.com/chendaniely/data_science-figure
-- D’Ignazio C, Bhargava R. DataBasic: Design Principles, Tools and Activities for Data Literacy Learners. The Journal of Community Informatics. 2016;12(3). doi:10.15353/joci.v12i3.3280
-- Wickham H, Grolemund G. R for Data Science: Import, Tidy, Transform, Visualize, and Model Data. O’Reilly Media; 2016. https://r4ds.had.co.nz/
-:::
-
-# Data Science Education in the Biomedical Sciences
-
-
-## Survey Validation: Selecting items for EFA {.smaller}
-
-:::::: columns
-::: {.column width="40%"}
-- 23 item
-- 67 responses
-- ~10 responses per item
-
-- 14 items for Exploratory Factor Analysis (EFA)
-- 20\% "significant" variables (wanted Q6)
-
-- "Significant":
-  - `p ≤ 0.05` and
-  - `|⍴| ≥ 0.5`
-:::
-
-::: {.column width="60%"}
-```{r, out.width="100%"}
-knitr::include_graphics("./img/030-personas/efa-selection.png")
-```
-:::
-::::::
-
-::: footnote
-- Corrplot: https://github.com/chendaniely/dissertation-analysis/blob/master/analysis/020-validation/020-005-fa.Rmd#L143
-:::
-
-## Exploratory Factor Analysis {.smaller}
-
-:::::: columns
-::: {.column width="40%"}
-- Method: tenBerge
-- Rotation: Varimax
-- Rotation did not affect results
-- Factors: 3
-- Tried 2 -4
-- Factoring method: Principal axis factoring
-- Data was not normal for maximum likelihood
-- Shapiro-Wilk normality test
-:::
-
-::: {.column width="60%"}
-```{r, out.width="100%"}
-knitr::include_graphics("./img/030-personas/efa-elbow.png")
-```
-:::
-::::::
-
-::: footnote
-- Using `psych::fa()`: https://github.com/chendaniely/dissertation-analysis/blob/master/analysis/020-validation/020-005-fa.Rmd#L287
-- Using `stats::factanal()`: https://github.com/chendaniely/dissertation-analysis/blob/master/analysis/020-validation/020-005-fa.Rmd#L592
-:::
-
-## EFA: Factor Loadings + Cronbah’s alpha {.smaller}
-
-:::::: columns
-::: {.column width="40%"}
-- PA1: Programming experience (7)
-  - 𝛼 = 0.96
-- PA2: Programming for data analysis (2)
-  - 𝛼 = 0.98
-- PA3: Solving technical problems (2)
-  - 𝛼 = 0.75
-:::
-
-::: {.column width="60%"}
-
-```{r, out.width="100%"}
-knitr::include_graphics("./img/030-personas/efa-loadings.png")
-```
-
-- EFA Factor loadings < 0.5 are supressed
-- Cronbah’s 𝛼, loadings ≥ 0.6 were used
-:::
-::::::
-
-::: footnote
-- Alpha caluclated using `psych::alpha()`: https://github.com/chendaniely/dissertation-analysis/blob/master/analysis/020-validation/020-010-cronbah.Rmd#L76
-:::
-
-## Hierarchical Clustering for Personas
-
-```{r}
-knitr::include_graphics("./img/030-personas/dendrogram-3.png")
-```
-
-# Workshop effacty
-
-## Pre-Post Results Overall
-
-```{r, out.width="100%"}
-knitr::include_graphics("./img/040-learning_materials/pre_post-overall.png")
-```
-
-## Pre-Post Results Overall
-
-```{r, out.width="100%"}
-knitr::include_graphics("./img/040-learning_materials/pre_post-overall-prop_prop.png")
-```
-
-## Pre-Post-Long Results
-
-```{r, out.width="100%"}
-knitr::include_graphics("./img/040-learning_materials/pre_post_long-results.png")
-```
