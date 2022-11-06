@@ -14,7 +14,7 @@ format:
 ---
 
 
-## Washington DC {.center}
+## Nacotchtank {.center}
 
 <style>
 div.footnote {
@@ -61,33 +61,25 @@ div.footnote {
 
 <a href='mailto:chendaniely@gmail.com'><i class="far fa-envelope"></i></a>
 <a href='https://twitter.com/chendaniely'><i class="fab fa-twitter"></i>
+<a href='https://mastodon.social/@chendaniely'><i class="fab fa-mastodon"></i>
 <a href='https://github.com/chendaniely'><i class="fab fa-github"></i></a>
 @chendaniely
 
-<img src="img/foto.jpeg" alt="Daniel Chen" style="border-radius: 50%;     max-width: 70%;"/>
+<img src="img/foto.jpeg" alt="Daniel Chen" style="border-radius: 50%; max-width: 70%;"/>
 
 </center>
 :::
 
 ::: {.column width="60%"}
 - Postdoctoral Research and Teaching Fellow, UBC, MDS-Vancouver
-
 - Data Science Educator, Posit, PBC ([Posit Academy](https://posit.co/products/enterprise/academy/))
-
-- The Carpentries
-
+- MPH: Columbia University Mailman School of Public Health
+- [The Carpentries](https://carpentries.org/)
 - Author, [Pandas for Everyone](https://www.pearson.com/us/higher-education/program/Chen-Pandas-for-Everyone-Python-Data-Analysis/PGM335102.html)
 :::
 ::::::
 
 # Data Science in the Biomedical Science
-
-## Data Science Programs Are Too General
-
-- Data science programs target **single broad audiences**
-- Opportunity to **branch out** to different disciplines
-- Democratization of data science education enables more **domain specific** learning materials
-
 
 ## Informatics Interest Outpace Opportunities
 
@@ -158,50 +150,6 @@ Implications and Lessons Learned for Domain-Specific Data Science Curriculum
 ::: footnote
 - Pruitt J, Adlin T. The Persona Lifecycle: Keeping People in Mind Throughout Product Design. 1st edition. Morgan Kaufmann; 2006.
 :::
-
-## Creating a "Wrong" Persona
-
-- Still backed by data
-- "Product"is still consistent
-- Personas are a work in progress
-
-::: footnote
-- Pruitt J, Adlin T. The Persona Lifecycle: Keeping People in Mind Throughout Product Design. 1st edition. Morgan Kaufmann; 2006.
-:::
-
-## Creating Learner Personas {.smaller}
-
-- Self-assessment survey (33 questions)
-- Clustered to identify personas (23 Questions)
-- 2 Waves (N=67): Summer 2020 (N=51) + Summer 2021
-
-1. Demographics (6)
-1. Programs Used in the Past (1)
-1. *Programming Experience (6)
-1. *Data Cleaning and Processing Experience (4)
-1. *Project and Data Management (2)
-1. *Statistics (4)
-1. Workshop Framing and Motivation (3)
-1. *Summary Likert (7)
-
-::: footnote
-- Ambrose SA, Bridges MW, DiPietro M, Lovett MC, Norman MK. How Learning Works: Seven Research-Based Principles for Smart Teaching. John Wiley & Sons; 2010.<br />
-- Jordan KL, Michonneau F. Analysis of The Carpentries Long-Term Surveys (April 2020). Zenodo; 2020. doi:10.5281/zenodo.3728205.<br />
-- Jordan K, Michonneau F, Weaver B. Analysis of Software and Data Carpentry’s Pre- and Post-Workshop Surveys. Zenodo; 2018. doi:10.5281/zenodo.1325464.<br />
-- Wilson G. Teaching Tech Together: How to Make Your Lessons Work and Build a Teaching Community around Them. Taylor & Francis; 2019. http://teachtogether.tech
-:::
-
-## Ocupation
-
-```{r}
-knitr::include_graphics("./img/030-personas/occupation.png")
-```
-
-## General Attitudes: Summary Likert (7)
-
-```{r}
-knitr::include_graphics("./img/030-personas/summary_likert_all.png")
-```
 
 
 ## Identifying Personas: Programming Experience
@@ -277,13 +225,56 @@ How Learner Personas Can Guide Educational Needs in the Short-Term and Long-Term
 - Concept maps: graphic of a mental model
 - Learner’s prior knowledge can help or hinder learning
 
-```{r}
+:::::: columns
+::: {.column width="50%"}
+
+```{r, out.width="75%"}
 knitr::include_graphics("./img/040-learning_materials/concept_map_dreyfus.png")
 ```
 
+:::
+
+::: {.column width="50%"}
+```{r, out.width="100%"}
+knitr::include_graphics("./img/040-learning_materials/dreyfus_model.png")
+```
+
+:::
+::::::
+
 ::: footnote
 - Ambrose SA, Bridges MW, DiPietro M, Lovett MC, Norman MK. How Learning Works: Seven Research-Based Principles for Smart Teaching. John Wiley & Sons; 2010.
+- Benner P. Using the Dreyfus Model of Skill Acquisition to Describe and Interpret Skill Acquisition and Clinical Judgment in Nursing Practice and Education. Bulletin of Science, Technology & Society. 2004;24(3):188-199. doi:10.1177/0270467604265061
+- Dreyfus SE, Dreyfus HL. A Five-Stage Model of the Mental Activities Involved in Directed Skill Acquisition. California Univ Berkeley Operations Research Center; 1980.
+- Koch C, Wilson G. Software carpentry: Instructor Training. Published online June 2016. doi:10.5281/zenodo.57571
 - Wilson G. Teaching Tech Together: How to Make Your Lessons Work and Build a Teaching Community around Them. Taylor & Francis; 2019. http://teachtogether.tech
+:::
+
+## Bloom’s Taxonomy
+
+:::::: columns
+::: {.column width="50%"}
+
+```{r, out.width="100%"}
+knitr::include_graphics("./img/040-learning_materials/blooms-pyramid.png")
+```
+:::
+
+::: {.column width="50%"}
+```{r, out.width="100%"}
+knitr::include_graphics("./img/040-learning_materials/blooms-willingham.png")
+```
+:::
+::::::
+
+- 2020 Computing Curriculum Guidelines: Knowledge-based -> Competency-based
+
+::: footnote
+- Anderson LW, Bloom BS, others. A Taxonomy for Learning, Teaching, and Assessing: A Revision of Bloom’s Taxonomy of Educational Objectives. Longman,; 2001.
+- Armstrong P. Bloom’s taxonomy. Vanderbilt University Center for Teaching. Published 2010. https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/
+- Bloom’s Taxonomy—That Pyramid is a Problem. Teach Like a Champion. Published April 3, 2017. Accessed November 29, 2021. https://teachlikeachampion.com/blog/blooms-taxonomy-pyramid-problem/
+- CC2020 Task Force. Computing Curricula 2020: Paradigms for Global Computing Education. ACM; 2020. doi:10.1145/3467967
+- Donald Clark Plan B: Bogus pyramids: Learning methods, Maslow and Bloom. Donald Clark Plan B. Published July 13, 2020. Accessed November 17, 2021. https://donaldclarkplanb.blogspot.com/2020/07/bogus-pyramids-learning-methods-maslow.html
 :::
 
 ## Summative Assessment
@@ -319,25 +310,6 @@ knitr::include_graphics("./img/040-learning_materials/summative-r.png")
 ```
 :::
 ::::::
-
-## Are the Materials Effective?
-
-- Create the materials
-- Test retest design
-  - Pre, post, and long-term survey
-- Workshop not classroom setting
-- Assessment needs to be more flexible
-  - Questions need to be broken down for learners
-- Ask about confidence not objective assessment
-
-::: footnote
-- Jordan K. Data Carpentry Assessment Report: Analysis of Post-Workshop Survey Results. Zenodo; 2016. doi:10.5281/zenodo.165858
-- Jordan K. Analysis of The Carpentries Long-Term Impact Survey. Zenodo; 2018. doi:10.5281/zenodo.1402200
-- Jordan KL, Marwick B, Duckles J, Zimmerman N, Becker E. Analysis of Software Carpentry’s Post-Workshop Surveys. Zenodo; 2017. doi:10.5281/zenodo.1043533
-- Jordan KL, Marwick B, Weaver B, et al. Analysis of the Carpentries’ Long-Term Feedback Survey. Zenodo; 2017. doi:10.5281/zenodo.1039944
-- Jordan KL, Michonneau F. Analysis of The Carpentries Long-Term Surveys (April 2020). Zenodo; 2020. doi:10.5281/zenodo.3728205
-- Jordan K, Michonneau F, Weaver B. Analysis of Software and Data Carpentry’s Pre- and Post-Workshop Surveys. Zenodo; 2018. doi:10.5281/zenodo.1325464
-:::
 
 ## Learning Objectives {.smaller}
 
@@ -414,29 +386,7 @@ Part II
 :::
 ::::::
 
-# Assessing Workshop Effacy
-
-## Workshop Attendees
-
-:::::: columns
-::: {.column width="40%"}
-
-- 8 Workshops
-  - 200 Attendees across 2 days
-- 91 Responses
-  - 67 Pre-workshop
-  - 43 Post-workshop
-  - 11 Long-term
-:::
-
-::: {.column width="60%"}
-
-```{r, out.width="100%"}
-knitr::include_graphics("./img/040-learning_materials/workshop-survey-counts.png")
-```
-
-:::
-::::::
+# Assessing Workshop Efficacy
 
 ## Learning Objectives {.smaller}
 

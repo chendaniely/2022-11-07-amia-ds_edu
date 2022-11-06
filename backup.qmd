@@ -5,7 +5,7 @@ author: "[Daniel Chen](https://daniel.rbind.io/)"
 date: "Monday, November 7, 2022"
 format:
   revealjs:
-    footer: "[Daniel Chen](https://daniel.rbind.io/). @chendaniely. Using [Quarto](https://quarto.org/docs/presentations/revealjs/index.html). Slides: [https://github.com/chendaniely/2022-11-07-amia-ds_edu](https://github.com/chendaniely/2022-11-07-amia-ds_edu)"
+    footer: "[Daniel Chen](httpsuds://daniel.rbind.io/). @chendaniely. Using [Quarto](https://quarto.org/docs/presentations/revealjs/index.html). Slides: [https://github.com/chendaniely/2022-11-07-amia-ds_edu](https://github.com/chendaniely/2022-11-07-amia-ds_edu)"
     theme: ["custom.scss"]
     slide-number: c/t
     show-slide-number: all
@@ -56,6 +56,12 @@ knitr::include_graphics("./img/010-ds_edu/data_science_cycles.png")
 
 # Data Science Education in the Biomedical Sciences
 
+## Data Science Programs Are Too General
+
+- Data science programs target **single broad audiences**
+- Opportunity to **branch out** to different disciplines
+- Democratization of data science education enables more **domain specific** learning materials
+
 ## Successful R-based Test Package Submitted to FDA
 
 - Nov 22nd, 2021
@@ -82,6 +88,49 @@ knitr::include_graphics("./img/010-ds_edu/data_science_cycles.png")
 - Pruitt J, Adlin T. The Persona Lifecycle: Keeping People in Mind Throughout Product Design. 1st edition. Morgan Kaufmann; 2006.
 :::
 
+## Creating a "Wrong" Persona
+
+- Still backed by data
+- "Product"is still consistent
+- Personas are a work in progress
+
+::: footnote
+- Pruitt J, Adlin T. The Persona Lifecycle: Keeping People in Mind Throughout Product Design. 1st edition. Morgan Kaufmann; 2006.
+:::
+
+## Creating Learner Personas {.smaller}
+
+- Self-assessment survey (33 questions)
+- Clustered to identify personas (23 Questions)
+- 2 Waves (N=67): Summer 2020 (N=51) + Summer 2021
+
+1. Demographics (6)
+1. Programs Used in the Past (1)
+1. *Programming Experience (6)
+1. *Data Cleaning and Processing Experience (4)
+1. *Project and Data Management (2)
+1. *Statistics (4)
+1. Workshop Framing and Motivation (3)
+1. *Summary Likert (7)
+
+::: footnote
+- Ambrose SA, Bridges MW, DiPietro M, Lovett MC, Norman MK. How Learning Works: Seven Research-Based Principles for Smart Teaching. John Wiley & Sons; 2010.<br />
+- Jordan KL, Michonneau F. Analysis of The Carpentries Long-Term Surveys (April 2020). Zenodo; 2020. doi:10.5281/zenodo.3728205.<br />
+- Jordan K, Michonneau F, Weaver B. Analysis of Software and Data Carpentry’s Pre- and Post-Workshop Surveys. Zenodo; 2018. doi:10.5281/zenodo.1325464.<br />
+- Wilson G. Teaching Tech Together: How to Make Your Lessons Work and Build a Teaching Community around Them. Taylor & Francis; 2019. http://teachtogether.tech
+:::
+
+## General Attitudes: Summary Likert (7)
+
+```{r}
+knitr::include_graphics("./img/030-personas/summary_likert_all.png")
+```
+
+## Occupation
+
+```{r}
+knitr::include_graphics("./img/030-personas/occupation.png")
+```
 
 ## Survey Validation: Selecting items for EFA {.smaller}
 
@@ -224,34 +273,48 @@ knitr::include_graphics("./img/040-learning_materials/dreyfus_model.png")
 - Wilson G. Teaching Tech Together: How to Make Your Lessons Work and Build a Teaching Community around Them. Taylor & Francis; 2019. http://teachtogether.tech
 :::
 
-## Bloom’s Taxonomy
+# Workshop efficacy
 
-:::::: columns
-::: {.column width="50%"}
+## Are the Materials Effective?
 
-```{r, out.width="100%"}
-knitr::include_graphics("./img/040-learning_materials/blooms-pyramid.png")
-```
-:::
-
-::: {.column width="50%"}
-```{r, out.width="100%"}
-knitr::include_graphics("./img/040-learning_materials/blooms-willingham.png")
-```
-:::
-::::::
-
-- 2020 Computing Curriculum Guidelines: Knowledge-based -> Competency-based
+- Create the materials
+- Test retest design
+  - Pre, post, and long-term survey
+- Workshop not classroom setting
+- Assessment needs to be more flexible
+  - Questions need to be broken down for learners
+- Ask about confidence not objective assessment
 
 ::: footnote
-- Anderson LW, Bloom BS, others. A Taxonomy for Learning, Teaching, and Assessing: A Revision of Bloom’s Taxonomy of Educational Objectives. Longman,; 2001.
-- Armstrong P. Bloom’s taxonomy. Vanderbilt University Center for Teaching. Published 2010. https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/
-- Bloom’s Taxonomy—That Pyramid is a Problem. Teach Like a Champion. Published April 3, 2017. Accessed November 29, 2021. https://teachlikeachampion.com/blog/blooms-taxonomy-pyramid-problem/
-- CC2020 Task Force. Computing Curricula 2020: Paradigms for Global Computing Education. ACM; 2020. doi:10.1145/3467967
-- Donald Clark Plan B: Bogus pyramids: Learning methods, Maslow and Bloom. Donald Clark Plan B. Published July 13, 2020. Accessed November 17, 2021. https://donaldclarkplanb.blogspot.com/2020/07/bogus-pyramids-learning-methods-maslow.html
+- Jordan K. Data Carpentry Assessment Report: Analysis of Post-Workshop Survey Results. Zenodo; 2016. doi:10.5281/zenodo.165858
+- Jordan K. Analysis of The Carpentries Long-Term Impact Survey. Zenodo; 2018. doi:10.5281/zenodo.1402200
+- Jordan KL, Marwick B, Duckles J, Zimmerman N, Becker E. Analysis of Software Carpentry’s Post-Workshop Surveys. Zenodo; 2017. doi:10.5281/zenodo.1043533
+- Jordan KL, Marwick B, Weaver B, et al. Analysis of the Carpentries’ Long-Term Feedback Survey. Zenodo; 2017. doi:10.5281/zenodo.1039944
+- Jordan KL, Michonneau F. Analysis of The Carpentries Long-Term Surveys (April 2020). Zenodo; 2020. doi:10.5281/zenodo.3728205
+- Jordan K, Michonneau F, Weaver B. Analysis of Software and Data Carpentry’s Pre- and Post-Workshop Surveys. Zenodo; 2018. doi:10.5281/zenodo.1325464
 :::
 
-# Workshop effacty
+## Workshop Attendees
+
+:::::: columns
+::: {.column width="40%"}
+
+- 8 Workshops
+  - 200 Attendees across 2 days
+- 91 Responses
+  - 67 Pre-workshop
+  - 43 Post-workshop
+  - 11 Long-term
+:::
+
+::: {.column width="60%"}
+
+```{r, out.width="100%"}
+knitr::include_graphics("./img/040-learning_materials/workshop-survey-counts.png")
+```
+
+:::
+::::::
 
 ## Pre-Post Results Overall
 
